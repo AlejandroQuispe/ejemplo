@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trabajo con jQuery</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#banner").click(function(){
+				$("#principal").slideDown();
+			})
+			$("#principal").click(function(){
+				$("#imagen").slideToggle("slow");
+			})
+ 			$("div").animate({left:'340px'},3000);
+ 			$("#banner").animate({fontSize:'40px'},5000);
+		})
+	</script>
+
+<style>
+body
+{
+	background-color: #b0fce0;
+}
+#banner, #principal
+{
+	padding: 10px;
+	text-align: center;
+	background-color:#f4c542;	
+	border-radius: 5px; 
+}
+	
+#principal
+{
+	padding: 50px;
+	background-color: #92f442; 
+	font-size: 50px;
+}
+#hack_space
+{
+background:#98bf21;
+height:330px;
+width:600px;
+position:absolute;
+border-radius: 5px;
+}
+#gracias
+{
+	padding: 10px;
+	text-align: center;
+	background-color: #fff;
+	font-size: 20px;
+}
+#Unpocodemi
+{	
+	background-color: #87dfed;
+
+	text-align: center;
+	padding: 8px;
+	font-size: 20px;
+}
+#imagen
+{
+padding-top: 15px;
+}
+
+</style>
+</head>
+<body>
+	<div id="banner">Hola que tal, como estan, mi nombre es <b>Alejandro</b> y esto es:</div>	
+	<div id="principal"><b>jQuery</b></div>
+	<div align="center" id="imagen"><img src="jquery_logo.png"></div>
+	<div>
+		<header>
+			<article>
+				<p id="Unpocodemi">
+				Hola gente de Hack Space,como ya observaron mi nombre es alejandro("Chino"),soy estudiante de Ing.Sistemas y me gusta aprender nuevos lenguajes programacion de forma autodidacta.Una de mis mejores virtudes es creo yo enseñar a las personas que no entiendan mucho sobre programacion y asi que se vayan familiarizandose con este mundo.
+				</p>
+			</article>	
+		</header>
+	</div>
+	<div id="gracias"><b>Gracias por la enseñanza</b></div>
+	<div id="hack_space"><img src="animacion.png" alt=""></div>
+	</body>
+</html>	
